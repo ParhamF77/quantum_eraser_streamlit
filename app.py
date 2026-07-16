@@ -337,7 +337,7 @@ st.title("Quantum Information Explorer")
 
 st.image(
     "Quantum_Eraser_Setup.jpg",
-    width=900,
+    width=675,
 )
 
 st.markdown(

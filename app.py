@@ -335,6 +335,11 @@ for key, value in DEFAULT_RESPONSES.items():
 
 st.title("Quantum Information Explorer")
 
+st.image(
+    "Quantum_Eraser.png",
+    use_container_width=True,
+)
+
 st.markdown(
     """
 Explore how polarization can make two optical paths distinguishable,

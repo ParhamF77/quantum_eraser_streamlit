@@ -505,8 +505,8 @@ if mode == "Guided investigation":
             """
 **Recommended settings**
 
-- Upper path: \(0^\circ\)
-- Lower path: \(0^\circ\)
+- Upper path: (0 degrees)
+- Lower path: (0 degrees)
 - Analyzer: off
 
 Predict whether a high-visibility interference pattern will appear.
@@ -518,8 +518,8 @@ Predict whether a high-visibility interference pattern will appear.
             """
 **Recommended settings**
 
-- Upper path: \(0^\circ\)
-- Lower path: \(90^\circ\)
+- Upper path: (0 degrees)
+- Lower path: (90 degrees)
 - Analyzer: off
 
 The two paths carry orthogonal polarization labels. Predict what happens
@@ -532,10 +532,10 @@ to the interference pattern.
             """
 **Recommended settings**
 
-- Upper path: \(0^\circ\)
-- Lower path: \(90^\circ\)
+- Upper path: (0 degrees)
+- Lower path: (90 degrees)
 - Analyzer: on
-- Analyzer angle: \(45^\circ\)
+- Analyzer angle: (45 degrees)
 
 The analyzer projects both path markers onto a common polarization axis.
 Predict whether interference will be restored.
@@ -545,8 +545,8 @@ Predict whether interference will be restored.
     else:
         st.markdown(
             """
-Set the upper path to \(0^\circ\), then rotate the lower-path polarization
-from \(0^\circ\) toward \(90^\circ\).
+Set the upper path to 0 degrees, then rotate the lower-path polarization
+from 0 degrees toward 90 degrees.
 
 Observe how fringe visibility changes continuously as the two paths
 become more distinguishable.
@@ -820,7 +820,7 @@ A_1 + e^{i\phi(x)} A_2
 \right|^2.
 \]
 
-For horizontal and vertical path markers with a \(45^\circ\) analyzer,
+For horizontal and vertical path markers with a 45 degree analyzer,
 
 \[
 \langle 45^\circ|H\rangle

@@ -336,8 +336,8 @@ for key, value in DEFAULT_RESPONSES.items():
 st.title("Quantum Information Explorer")
 
 st.image(
-    "Quantum_Eraser.png",
-    use_container_width=True,
+    "Quantum_Eraser_Setup.jpg",
+    width=900,
 )
 
 st.markdown(

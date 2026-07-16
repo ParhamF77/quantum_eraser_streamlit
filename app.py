@@ -753,90 +753,145 @@ with download_column_2:
 # ---------------------------------------------------------------------
 
 with st.expander("Instructor notes and physics"):
+    st.markdown("### Field model")
+
     st.markdown(
-        r"""
-### Field model
-
-The two path fields are represented by Jones vectors
-
-\[
-\mathbf{E}_1
-\quad \text{and} \quad
-\mathbf{E}_2.
-\]
+        """
+The two optical paths are represented by Jones vectors
+**E₁** and **E₂**.
 
 At screen position \(x\), the lower path acquires a relative phase
-\(\phi(x)\), giving
+\(\phi(x)\).
+"""
+    )
 
-\[
-\mathbf{E}_{\mathrm{tot}}(x)
-=
-\mathbf{E}_1
-+
-e^{i\phi(x)}\mathbf{E}_2.
-\]
+    st.latex(
+        r"""
+        \mathbf{E}_{\mathrm{tot}}(x)
+        =
+        \mathbf{E}_1
+        +
+        e^{i\phi(x)}\mathbf{E}_2
+        """
+    )
 
-The detected intensity is
+    st.markdown("The detected intensity is")
 
-\[
-I(x)
-=
-\mathbf{E}_{\mathrm{tot}}^\dagger
-\mathbf{E}_{\mathrm{tot}}.
-\]
+    st.latex(
+        r"""
+        I(x)
+        =
+        \mathbf{E}_{\mathrm{tot}}^{\dagger}
+        \mathbf{E}_{\mathrm{tot}}
+        """
+    )
 
-For equal-amplitude paths, the interference term is proportional to
+    st.markdown(
+        """
+For equal-amplitude paths, the interference term depends on the overlap
+between the two polarization states:
+"""
+    )
 
-\[
-\langle E_1 | E_2 \rangle.
-\]
+    st.latex(
+        r"""
+        \langle E_1 \mid E_2 \rangle
+        """
+    )
 
-If the polarization states are orthogonal,
+    st.markdown("For orthogonal horizontal and vertical polarizations,")
 
-\[
-\langle H|V\rangle = 0,
-\]
+    st.latex(
+        r"""
+        \langle H \mid V \rangle = 0
+        """
+    )
 
-and the interference term vanishes.
+    st.markdown(
+        """
+Therefore, the interference term vanishes because the two paths are fully
+distinguishable by polarization.
+"""
+    )
 
-### Eraser projection
+    st.markdown("### Eraser projection")
 
-An analyzer oriented along \(|a\rangle\) projects each path into the same
-measurement channel:
+    st.markdown(
+        """
+An analyzer oriented along the polarization state \(|a\rangle\) projects
+both paths onto the same measurement channel:
+"""
+    )
 
-\[
-A_1 = \langle a|E_1\rangle,
-\qquad
-A_2 = \langle a|E_2\rangle.
-\]
+    st.latex(
+        r"""
+        A_1 = \langle a \mid E_1 \rangle
+        """
+    )
 
-The detected signal becomes
+    st.latex(
+        r"""
+        A_2 = \langle a \mid E_2 \rangle
+        """
+    )
 
-\[
-I_a(x)
-=
-\left|
-A_1 + e^{i\phi(x)} A_2
-\right|^2.
-\]
+    st.markdown("The detected intensity after the analyzer becomes")
 
-For horizontal and vertical path markers with a 45 degree analyzer,
+    st.latex(
+        r"""
+        I_a(x)
+        =
+        \left|
+        A_1 + e^{i\phi(x)}A_2
+        \right|^2
+        """
+    )
 
-\[
-\langle 45^\circ|H\rangle
-=
-\langle 45^\circ|V\rangle
-=
-\frac{1}{\sqrt{2}},
-\]
+    st.markdown(
+        """
+For horizontal and vertical path markers with a \(45^\circ\) analyzer,
+"""
+    )
 
-so interference is restored in the selected analyzer output.
+    st.latex(
+        r"""
+        \langle 45^\circ \mid H \rangle
+        =
+        \langle 45^\circ \mid V \rangle
+        =
+        \frac{1}{\sqrt{2}}
+        """
+    )
 
+    st.markdown(
+        """
+Both paths are projected onto the same polarization direction, so
+interference is restored in that selected output channel.
+"""
+    )
+
+    st.markdown("### Complementarity")
+
+    st.markdown(
+        """
+For ideal pure polarization markers and equal path probabilities, fringe
+visibility \(V\) and path distinguishability \(D\) satisfy
+"""
+    )
+
+    st.latex(
+        r"""
+        V^2 + D^2 = 1
+        """
+    )
+
+    st.markdown(
+        """
 ### Important limitation
 
-This is a classical polarization-optics simulation. It reproduces the
-mathematical structure of the analogy experiment but does not simulate
-single-photon detection statistics, entanglement, or delayed-choice
-quantum eraser experiments.
+This app is a classical polarization-optics simulation based on Jones
+calculus. It reproduces the mathematical structure of the classroom
+quantum-eraser analogy, but it does not simulate single-photon detection,
+entanglement, or delayed-choice experiments.
 """
     )

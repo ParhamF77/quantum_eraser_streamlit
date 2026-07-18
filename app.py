@@ -336,7 +336,7 @@ for key, value in DEFAULT_RESPONSES.items():
 st.title("Quantum Information Explorer")
 
 st.image(
-    "QE_Setup.png",
+    "Quantum_Eraser_Setup.png",
     width=675,
 )
 
